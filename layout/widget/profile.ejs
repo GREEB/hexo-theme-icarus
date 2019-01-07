@@ -14,10 +14,12 @@
         <nav class="level">
             <div class="level-item has-text-centered">
                 <div>
-                    <img class="image is-128x128 has-mb-6" src="<%= avatar() %>" alt="<%= get_config_from_obj(widget, 'author') %>">
+                    <!-- <img class="image is-128x128 has-mb-6" src="<%= avatar() %>" alt="<%= get_config_from_obj(widget, 'author') %>"> -->
                     <% if (get_config_from_obj(widget, 'author')) { %>
-                    <p class="is-size-4 is-block">
+                    <p class="is-size-3 is-block author">
+                      <a href="/">
                         <%= get_config_from_obj(widget, 'author') %>
+                      </a>
                     </p>
                     <% } %>
                     <% if (get_config_from_obj(widget, 'author_title')) { %>
@@ -34,7 +36,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="level is-mobile">
+        <!-- <nav class="level is-mobile">
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
@@ -65,11 +67,11 @@
                     </p>
                 </div>
             </div>
-        </nav>
-        <div class="level">
+        </nav> -->
+        <!-- <div class="level">
             <a class="level-item button is-link is-rounded" href="<%= url_for(widget.follow_link) %>">
                 <%= __('widget.follow') %></a>
-        </div>
+        </div> -->
         <% const socialLinks = get_config_from_obj(widget, 'social_links'); %>
         <% if (socialLinks !== null) { %>
         <div class="level is-mobile">
