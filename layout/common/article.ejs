@@ -25,7 +25,7 @@
                 <span class="level-item has-text-grey">
                     <% const words = word_count(post._content); %>
                     <% const time = duration((words / 150.0) * 60, 'seconds') %>
-                    <%= `${ time.locale(get_config('language', 'en')).humanize() } ${ __('article.read')} (${ __('article.about') } ${ words } ${ __('article.words') })` %>
+                    <%= `${ time.locale(get_config('language', 'en')).humanize() } ${ __('article.read')}` %>
                 </span>
                 <% } %>
             </div>
@@ -56,10 +56,11 @@
         </div>
         <% } %>
         <% if (index && post.excerpt) { %>
+        <div class="bottomshadow"></div>
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="<%- url_for(post.path) %>#more"><%= __('article.more') %></a>
+                <a class="button is-size-7 is-light readmore" href="<%- url_for(post.path) %>#more"><i class="fas fa-angle-down"></i></a>
                 </div>
             </div>
         </div>
