@@ -56,7 +56,9 @@
         </div>
         <% } %>
         <% if (index && post.excerpt) { %>
-        <div class="bottomshadow"></div>
+        <a href="<%- url_for(post.path) %>">
+          <div class="bottomshadow"></div>
+        </a>
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
