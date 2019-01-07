@@ -8,7 +8,7 @@
 <br>
 </p>
 
-![Icarus](http://ppoffice.github.io/hexo-theme-icarus/gallery/preview.png?1 "Icarus Preview")
+![Icarus](https://i.imgur.com/DX2kJxq.png "Icarus Preview")
 
 ### :cd: Installation
 
