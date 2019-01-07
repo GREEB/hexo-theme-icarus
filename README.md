@@ -10,6 +10,12 @@
 
 ![Icarus](https://i.imgur.com/DX2kJxq.png "Icarus Preview")
 
+### Dark Icarus notes
+
+This theme was made for my personal Blog, i may delte features you like so be aware of that. I try to just comment out stuff i dont need so you can still use them, evrthing should be styled also the parts i dont use/commented out.
+
+Look at the template config to get the exact same look as you see above.
+
 ### :cd: Installation
 
 Download & extract or `git clone` Icarus from GitHub to your blog's theme folder, and that's it!
